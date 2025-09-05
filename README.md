@@ -1,12 +1,17 @@
-# ONNX Runtime Mobile image classification Android sample application
+# NSFW Image Classifier Android ONNX
 
 ## Overview
-This is an example application for [ONNX Runtime](https://github.com/microsoft/onnxruntime) on Android. The demo app uses image classification which is able to continuously classify the objects it sees from the device's camera in real-time and displays the most probable inference results on the screen.
+This is an Android application for NSFW (Not Safe For Work) image classification using [ONNX Runtime](https://github.com/microsoft/onnxruntime). The demo app uses image classification which is able to continuously classify images from the device's camera in real-time and displays the most probable inference results on the screen.
 
-This example is loosely based on [Google CodeLabs - Getting Started with CameraX](https://codelabs.developers.google.com/codelabs/camerax-getting-started)
+## Source Code Attribution
+This source code is based on:
+- [onnxruntime-inference-examples](https://github.com/microsoft/onnxruntime-inference-examples) - Microsoft's ONNX Runtime inference examples
+- [nudenet v3.4 320n onnx](https://github.com/notAI-tech/NudeNet) - NudeNet model for NSFW detection
+
+This example is also loosely based on [Google CodeLabs - Getting Started with CameraX](https://codelabs.developers.google.com/codelabs/camerax-getting-started)
 
 ### Model
-We use pre-trained [MobileNet V2 models](https://github.com/onnx/models/tree/main/vision/classification/mobilenet) from the ONNX model zoo in this sample app.
+This application uses the [NudeNet v3.4 320n ONNX model](https://github.com/notAI-tech/NudeNet) for NSFW content detection. The model has been converted to ONNX format for efficient inference on Android devices.
 
 ## Requirements
 - Android Studio Electric Eel 2022.1.1+ (installed on Mac/Windows/Linux)
